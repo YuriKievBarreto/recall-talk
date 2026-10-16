@@ -5,7 +5,7 @@ from uuid import UUID, uuid4
 
 from sqlalchemy import Column, Text
 from sqlmodel import Field, SQLModel, Relationship
-from user import ProficiencyLevel
+from app.models.user import ProficiencyLevel
 
 
 class ItemType(StrEnum):
