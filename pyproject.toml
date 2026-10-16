@@ -11,8 +11,10 @@ dependencies = [
     "langchain-aws>=1.9.0",
     "langgraph>=1.2.15",
     "psycopg2-binary>=2.9.13",
+    "pydantic-settings>=2.16.0",
     "pytest>=9.1.1",
     "python-dotenv>=1.2.4",
     "sqlalchemy>=2.1.4",
+    "sqlmodel>=0.0.48",
     "uvicorn>=0.54.0",
 ]
