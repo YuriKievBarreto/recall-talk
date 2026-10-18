@@ -4,6 +4,7 @@ from sqlmodel import SQLModel
 from app.models.tables.user import ProficiencyLevel
 
 
+
 class UserCreate(SQLModel):
     name: str 
     email: str 

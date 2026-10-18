@@ -1,12 +1,8 @@
 from fastapi import FastAPI
-
+from app.api.routes import auth_router
 
 app = FastAPI()
-
-
-@app.get("/")
-def home():
-    return "hello world!"
+app.include_router(auth_router.router, prefix="/auth")
 
 
 if __name__ == "__main__":
