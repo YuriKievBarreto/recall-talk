@@ -34,3 +34,14 @@ class UserResponse(SQLModel):
     proficiency_level: ProficiencyLevel
     is_active: bool
     created_at: datetime
+
+
+class LoginRequest(SQLModel):
+    email: str
+    password: str
+
+
+class TokenResponse(SQLModel):
+    access_token: str
+    token_type: str = "bearer"
+    user: UserResponse | None = None
