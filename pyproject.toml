@@ -31,3 +31,8 @@ dev = [
 dev = "uvicorn app.main:app --reload --port 8000"
 test = "pytest"
 
+[tool.pytest.ini_options]
+pythonpath = "."
+testpaths = ["tests"]
+
+
