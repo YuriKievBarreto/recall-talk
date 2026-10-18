@@ -28,6 +28,7 @@ class User(SQLModel, table=True):
     native_language: str = Field(default="pt-BR", max_length=10)
     target_language: str = Field(default="en", max_length=10)
     proficiency_level: str = Field(default=ProficiencyLevel.A1, max_length=2)
+    password_hash: str
 
     created_at: datetime = Field(
         default_factory=lambda: datetime.now(timezone.utc)
